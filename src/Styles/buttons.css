@@ -9,6 +9,10 @@
     border: transparent;
 }
 
+.buttons.icon:hover {
+    background-color: var(--color-grey-3);
+}
+
 .buttons:hover {
     cursor: pointer;
 }
@@ -38,7 +42,19 @@
 .buttons.grey-3 {
     background-color: var(--color-grey-3);
     border-color: var(--color-grey-3);
-    color: var(--color-grey-1);
+    color: var(--color-grey-2);
+}
+
+.buttons.buttons.grey-3:hover {
+    background-color: var(--color-primary-1);
+    border: 2px solid var(--color-primary-1);
+    color: #FFFFFF;
+}
+
+.buttons.grey-3:focus {
+    background-color: var(--color-primary-1);
+    color: var(--color-grey-4);
+    border: 2px solid var(--color-primary-1);
 }
 
 .buttons.grey-2 {

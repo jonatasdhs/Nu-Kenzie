@@ -6,6 +6,7 @@
 .Initial-text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 28px;
 }
 
@@ -23,6 +24,10 @@
 .Initial-text span {
     color: #FFFFFF;
     font-size: 16px;
+}
+
+.Initial-text button {
+    width: 241px;
 }
 
 .Initial-container {

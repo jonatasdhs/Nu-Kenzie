@@ -5,6 +5,10 @@
     border: 2px solid var(--color-grey-4);
 }
 
+.inputs:hover {
+    border-color: var(--color-grey-1);
+}
+
 .inputs::placeholder {
     font-size: var(--font-size-3);
     color: var(--color-grey-2);

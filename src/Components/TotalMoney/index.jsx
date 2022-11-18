@@ -2,8 +2,6 @@ import "./index.css";
 
 const TotalMoney = ({ listTransactions }) => {
   const sum = listTransactions.reduce((previusValue, curretValue) => {
-    console.log(previusValue);
-    console.log(curretValue);
     return previusValue + curretValue.value;
   }, 0);
   return (
