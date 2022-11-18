@@ -1,0 +1,29 @@
+.inputs {
+    padding: 13.4px 16px;
+    border-radius: 8px;
+    background-color: var(--color-grey-4);
+    border: 2px solid var(--color-grey-4);
+}
+
+.inputs::placeholder {
+    font-size: var(--font-size-3);
+    color: var(--color-grey-2);
+
+}
+
+.inputs:focus {
+    background-color: #FFFFFF;
+}
+
+.inputs option {
+    border-radius: 8px;
+    background-color: var(--color-grey-4);
+}
+
+.inputs select {
+    display: none;
+}
+
+.inputs option:hover option {
+    background-color: var(--color-grey-3);
+}

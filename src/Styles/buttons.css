@@ -1,0 +1,48 @@
+.buttons {
+    border: 2px solid;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.buttons.icon {
+    padding: 6.11px;
+    border: transparent;
+}
+
+.buttons:hover {
+    cursor: pointer;
+}
+
+.buttons.primary {
+    background-color: var(--color-primary-1);
+    border-color: var(--color-primary-1);
+    font-size: var(--font-size-3);
+    color: #FFFFFF;
+}
+
+.buttons.primary:hover {
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-2);
+    color: var(--color-grey-4);
+}
+
+.buttons.small {
+    padding: 10.5px 15px;
+    font-size: var(--font-size-5);
+}
+
+.buttons.medium {
+    padding: 14.5px 20px;
+}
+
+.buttons.grey-3 {
+    background-color: var(--color-grey-3);
+    border-color: var(--color-grey-3);
+    color: var(--color-grey-1);
+}
+
+.buttons.grey-2 {
+    background-color: var(--color-grey-2);
+    border-color: var(--color-grey-2);
+    color: var(--color-grey-4);
+}
