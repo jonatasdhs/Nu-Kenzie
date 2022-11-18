@@ -1,20 +1,20 @@
 import "./Styles/globalStyles.css";
 import { useState } from "react";
 import "./App.css";
-import Form from "./Components/Form";
-import List from "./Components/List";
-import TotalMoney from "./Components/TotalMoney";
 import Header from "./Components/Header";
+import Main from "./Components/Main";
+import Initial from "./Components/Initial";
 
 function App() {
+  const [isHome, setIsHome] = useState(false);
   const [listTransactions, setListTransactions] = useState([
     { description: "Salário recebido", type: "entrada", value: 2500 },
     { description: "Conta de luz", type: "saída", value: -150 },
   ]);
 
   function handleTransaction(value, description, type) {
-    const newValue = type === 'saída' ? value * -1 : value
-    const newType = type === undefined? type = 'entrada' : type
+    const newValue = type === "saída" ? value * -1 : value;
+    const newType = type === undefined ? (type = "entrada") : type;
     return setListTransactions([
       ...listTransactions,
       { description: description, type: newType, value: newValue },
@@ -30,8 +30,20 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <main className="App-main container">
+      {isHome ? (
+        <div>
+          <Header setIsHome={setIsHome} />
+          <Main
+            listTransactions={listTransactions}
+            handleTransaction={handleTransaction}
+            handleRemoveTransaction={handleRemoveTransaction}
+          />
+        </div>
+      ) : (
+        <Initial setIsHome={setIsHome}/>
+      )}
+
+      {/* <main className="App-main container">
         <div className="form-container">
           <Form
             listTransactions={listTransactions}
@@ -55,7 +67,7 @@ function App() {
             />
           </ul>
         </div>
-      </main>
+      </main> */}
     </div>
   );
 }
