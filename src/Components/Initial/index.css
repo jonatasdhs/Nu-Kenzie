@@ -1,0 +1,39 @@
+.Initial {
+  height: 100vh;
+  background-color: var(--color-grey-1);
+}
+
+.Initial-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.Initial-text img {
+    width: 122px;
+}
+
+.Initial-text h1 {
+    color: #FFFFFF;
+    font-size: var(--font-size-1);
+    font-weight: 800;
+    line-height: 48px;
+}
+
+.Initial-text span {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.Initial-text button {
+    width: 241px;
+}
+
+.Initial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 94px;
+  gap: 48px;
+}
