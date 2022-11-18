@@ -1,6 +1,9 @@
 .App-main {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 16px;
 }
 
 .filter {
@@ -8,6 +11,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .filter p {
@@ -23,4 +27,37 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  header > .header-content{
+    width: 1000px;
+  }
+
+  form {
+    width: 363px;
+  }
+
+  .App-main {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .Card {
+    width: 560px;
+    height: 87px;
+  }
+
+  .container-list {
+    width: 560px;
+  }
 }

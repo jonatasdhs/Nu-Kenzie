@@ -14,7 +14,7 @@ const Main = ({listTransactions, handleTransaction, handleRemoveTransaction}) =>
           />
           <TotalMoney listTransactions={listTransactions} />
         </div>
-        <div>
+        <div className="container-list">
           <div className="filter">
             <p>Resumo financeiro</p>
             <div>
