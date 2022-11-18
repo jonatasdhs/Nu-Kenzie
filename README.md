@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # Vercel deploy
-Deployed in vercel: [https://github.com/jonatasdhs/react-entrega-s1-template-nu-kenzie](https://react-entrega-s1-template-nu-kenzie-smoky.vercel.app/)
+Deployed in vercel: https://react-entrega-s1-template-nu-kenzie-smoky.vercel.app/
